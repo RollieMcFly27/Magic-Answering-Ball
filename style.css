@@ -1,0 +1,42 @@
+.shake {
+    animation: shake 1s cubic-bezier(.36,.07,.19,.97) both infinite;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate(-1px, 0);
+    }
+  
+    20%, 80% {
+      transform: translate(2px, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate(-4px, 0);
+    }
+  
+    40%, 60% {
+      transform: translate(4px, 0);
+    }
+  }
+  
+  .fade {
+    animation: fade ease-in 2s forwards;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  .mini-container {
+    max-width: 50%;
+  }
+  
+  .ball {
+    width: 70%;
+  }
